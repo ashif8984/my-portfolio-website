@@ -5,7 +5,7 @@ import Skills from "@/components/Skills";
 import Work from "@/components/Work";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Posts from "./components/posts";
+import Posts from "@/components/Posts";
 
 export default function App() {
   return (
