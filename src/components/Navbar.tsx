@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const links = [
-  { label: 'About', href: '#about' },
-  { label: 'Work', href: '#work' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Contact', href: '#contact' },
+  { label: "About", href: "#about" },
+  { label: "Work", href: "#work" },
+  { label: "Skills", href: "#skills" },
+  { label: "Posts", href: "#posts" },
 ];
 
 export default function Navbar() {
@@ -15,14 +15,16 @@ export default function Navbar() {
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-ink-50/80 backdrop-blur-xl border-b border-ink-200/70' : 'bg-transparent'
+        scrolled
+          ? "bg-ink-50/80 backdrop-blur-xl border-b border-ink-200/70"
+          : "bg-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:py-5">
@@ -46,6 +48,13 @@ export default function Navbar() {
             </a>
           ))}
           <a
+            href="files/resume.pdf"
+            download="AshifEqbal_Resume.pdf"
+            className="rounded-lg px-4 py-2 text-sm font-medium text-ink-600 transition-colors duration-200 hover:bg-ink-100 hover:text-ink-900"
+          >
+            Resume
+          </a>
+          <a
             href="#contact"
             className="ml-2 rounded-lg bg-ink-900 px-4 py-2 text-sm font-medium text-ink-50 transition-all duration-200 hover:bg-ink-800 hover:shadow-lg hover:shadow-ink-900/20"
           >
@@ -65,7 +74,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div
         className={`overflow-hidden border-b border-ink-200/70 bg-ink-50/95 backdrop-blur-xl transition-[max-height] duration-300 md:hidden ${
-          open ? 'max-h-80' : 'max-h-0'
+          open ? "max-h-80" : "max-h-0"
         }`}
       >
         <div className="flex flex-col gap-1 px-6 py-4">
@@ -79,6 +88,13 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
+          <a
+            href="files/resume.pdf"
+            download="AshifEqbal_Resume.pdf"
+            className="rounded-lg px-4 py-3 text-sm font-medium text-ink-700 transition-colors hover:bg-ink-100 hover:text-ink-900"
+          >
+            Resume
+          </a>
           <a
             href="#contact"
             onClick={() => setOpen(false)}

@@ -1,54 +1,56 @@
-import { Cloud, Code2, GitBranch, Palette } from 'lucide-react';
-import { useReveal } from '@/hooks/useReveal';
+import { Cloud, Code2, GitBranch, Palette } from "lucide-react";
+import { useReveal } from "@/hooks/useReveal";
 
 const specialties = [
   {
     icon: GitBranch,
-    title: 'DevOps',
-    desc: 'Architecting robust CI/CD, cloud environments, and automated systems built for zero-downtime reliability.',
+    title: "DevOps",
+    desc: "Architecting robust CI/CD, cloud environments, and automated systems built for zero-downtime reliability.",
   },
   {
     icon: Cloud,
-    title: 'Cloud',
-    desc: 'Architecting resilient, high-availability multi-cloud environments for scalability and enterprise performance.',
+    title: "Cloud",
+    desc: "Architecting resilient, high-availability multi-cloud environments for scalability and enterprise performance.",
   },
   {
     icon: Code2,
-    title: 'Platform Engineering',
-    desc: 'Designing enterprise-grade platforms systems that empower teams to ship faster with zero overhead.',
+    title: "Platform Engineering",
+    desc: "Designing enterprise-grade platforms systems that empower teams to ship faster with zero overhead.",
   },
   {
     icon: Palette,
-    title: 'SRE',
-    desc: 'Applying software engineering rigor to infrastructure operations eliminating toil and building fail-safe environments.',
-  }
+    title: "SRE",
+    desc: "Applying software engineering rigor to infrastructure operations eliminating toil and building fail-safe environments.",
+  },
 ];
 
 const tools = [
-  { name: 'Git', logo: 'https://cdn.simpleicons.org/github/181717' },
-  { name: 'GitHub Actions', logo: 'https://cdn.simpleicons.org/githubactions/2088ff' },
-  { name: 'Jenkins', logo: 'https://cdn.simpleicons.org/jenkins/D24939' },
-  { name: 'Docker', logo: 'https://cdn.simpleicons.org/docker/2496ed' },
-  { name: 'Kubernetes', logo: 'https://cdn.simpleicons.org/kubernetes/326ce5' },
-  { name: 'Ansible', logo: 'https://cdn.simpleicons.org/ansible/ee0000' },
-  { name: 'Terraform', logo: 'https://cdn.simpleicons.org/terraform/7b42bc' },
-  { name: 'GitOps', logo: 'https://cdn.simpleicons.org/git/ FC6D26' },
-  { name: 'Nodejs', logo: 'https://cdn.simpleicons.org/javascript/339933' },
-  { name: 'Python', logo: 'https://cdn.simpleicons.org/python/3776ab' },
-  { name: 'Linux', logo: 'https://cdn.simpleicons.org/linux/000000' },
-  { name: 'Prometheus', logo: 'https://cdn.simpleicons.org/prometheus/000000' }
-
-
+  { name: "Git", logo: "https://cdn.simpleicons.org/github/181717" },
+  {
+    name: "GitHub Actions",
+    logo: "https://cdn.simpleicons.org/githubactions/2088ff",
+  },
+  { name: "Jenkins", logo: "https://cdn.simpleicons.org/jenkins/D24939" },
+  { name: "Docker", logo: "https://cdn.simpleicons.org/docker/2496ed" },
+  { name: "Kubernetes", logo: "https://cdn.simpleicons.org/kubernetes/326ce5" },
+  { name: "Ansible", logo: "https://cdn.simpleicons.org/ansible/ee0000" },
+  { name: "Terraform", logo: "https://cdn.simpleicons.org/terraform/7b42bc" },
+  { name: "GitOps", logo: "https://cdn.simpleicons.org/git/ FC6D26" },
+  { name: "Nodejs", logo: "https://cdn.simpleicons.org/javascript/339933" },
+  { name: "Python", logo: "https://cdn.simpleicons.org/python/3776ab" },
+  { name: "Linux", logo: "https://cdn.simpleicons.org/linux/000000" },
+  { name: "Prometheus", logo: "https://cdn.simpleicons.org/prometheus/000000" },
 ];
-
-
 
 export default function Skills() {
   const { ref, visible } = useReveal();
 
   return (
     <section id="skills" className="bg-white/50 py-20 lg:py-28">
-      <div ref={ref} className={`mx-auto max-w-6xl px-6 ${visible ? 'is-visible' : 'reveal'}`}>
+      <div
+        ref={ref}
+        className={`mx-auto max-w-6xl px-6 ${visible ? "is-visible" : "reveal"}`}
+      >
         {/* Specialties */}
         <div className="text-center">
           <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">
@@ -56,9 +58,9 @@ export default function Skills() {
             Specialized in
             <span className="h-px w-8 bg-accent-500" />
           </span>
-           <h3 className="mt-4 font-display text-2xl font-bold tracking-tight text-ink-900 sm:text-3xl">
-              {/* Skills I have */}
-              What I Do Best
+          <h3 className="mt-4 font-display text-2xl font-bold tracking-tight text-ink-900 sm:text-3xl">
+            {/* Skills I have */}
+            What I Do Best
           </h3>
         </div>
 
@@ -76,7 +78,9 @@ export default function Skills() {
               <h3 className="relative mt-5 font-display text-lg font-semibold text-ink-900">
                 {s.title}
               </h3>
-              <p className="relative mt-2 text-sm leading-relaxed text-ink-600">{s.desc}</p>
+              <p className="relative mt-2 text-sm leading-relaxed text-ink-600">
+                {s.desc}
+              </p>
             </div>
           ))}
         </div>
@@ -87,14 +91,12 @@ export default function Skills() {
             <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">
               <span className="h-px w-8 bg-accent-500" />
               My toolbox
-              
               <span className="h-px w-8 bg-accent-500" />
             </span>
             <h3 className="mt-4 font-display text-2xl font-bold tracking-tight text-ink-900 sm:text-3xl">
               {/* Tools & technologies */}
-               Weapons of Choice
+              Weapons of Choice
             </h3>
-
           </div>
 
           <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
@@ -115,7 +117,9 @@ export default function Skills() {
                     {/* <t.icon size={18} /> */}
                   </span>
                 )}
-                <span className="text-sm font-medium text-ink-700">{t.name}</span>
+                <span className="text-sm font-medium text-ink-700">
+                  {t.name}
+                </span>
               </div>
             ))}
           </div>

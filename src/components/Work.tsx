@@ -1,4 +1,10 @@
-import { ArrowUpRight, FlaskConical, Ghost, ShieldHalf, Database} from "lucide-react";
+import {
+  ArrowUpRight,
+  FlaskConical,
+  Ghost,
+  ShieldHalf,
+  Database,
+} from "lucide-react";
 import { useReveal } from "@/hooks/useReveal";
 
 const works = [
@@ -57,7 +63,7 @@ export default function Work() {
             </span>
             <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl">
               {/* Selected projects */}
-              Things I’ve Built and Deployed 
+              Things I’ve Built and Deployed
             </h2>
           </div>
         </div>

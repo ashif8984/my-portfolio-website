@@ -9,7 +9,6 @@ const companies = [
   { name: "Cognizant", note: "Cognizant", logo: "/cognizant.svg" },
   { name: "Amdocs", note: "Amdocs", logo: "/amdocs.svg" },
   { name: "Amazon", note: "Amazon", logo: "/aws.svg" },
-  // /Users/ashif/MyWork/Nodejs/Portfolio-website/public/Aws--Streamline-Svg-Logos.svg
   { name: "EY", note: "Ernst & Young", logo: "/ey.svg" },
 ];
 
@@ -24,29 +23,6 @@ export default function About() {
       >
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
           {/* Profile card */}
-          {/* <div className="lg:col-span-5">
-            <div className="relative mx-auto max-w-sm">
-              <div className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-accent-200/60 to-accent-400/20 blur-2xl" />
-              <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-ink-200 bg-gradient-to-br from-ink-900 to-ink-800 p-1 shadow-2xl shadow-ink-900/10">
-                <div className="flex h-full flex-col items-center justify-center rounded-[1.35rem] bg-gradient-to-br from-ink-800 to-ink-900 p-8 text-center">
-                  <div className="flex h-28 w-28 items-center justify-center rounded-full bg-gradient-to-br from-accent-500 to-accent-700 font-display text-5xl font-bold text-white shadow-lg">
-                    AE
-                  </div>
-                  <p className="mt-6 font-display text-xl font-semibold text-ink-50">Ashif Eqbal</p>
-                  <p className="mt-1 text-sm text-accent-300">DevOps & Cloud Engineer</p>
-                  <div className="mt-6 flex gap-2">
-                    <span className="rounded-full border border-ink-700 bg-ink-800 px-3 py-1 text-xs text-ink-300">
-                      11+ yrs experience
-                    </span>
-                    <span className="rounded-full border border-ink-700 bg-ink-800 px-3 py-1 text-xs text-ink-300">
-                      Open to work
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
-
           <div className="lg:col-span-5">
             <div className="relative  mx-auto max-w-sm">
               {/* <div className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-accent-200/40 to-slate-200/50 blur-2xl" /> */}
@@ -88,7 +64,10 @@ export default function About() {
                   <p className="mt-1 text-sm text-ink-300">
                     Senior DevOps Engineer
                   </p>
-                  <button className="bg-transparent mt-3 w-full  hover:bg-white hover:text-black text-white font-semibold py-2 px-8 border border-gray-400 rounded shadow">
+                  <button 
+                  
+                    className="bg-transparent mt-3 w-full  hover:bg-white hover:text-black text-white font-semibold py-2 px-8 border border-gray-400 rounded-xl shadow">
+                    
                     <a href="#contact">Say Hello</a>
                   </button>
                 </div>

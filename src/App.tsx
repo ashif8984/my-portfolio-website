@@ -1,10 +1,11 @@
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import About from '@/components/About';
-import Skills from '@/components/Skills';
-import Work from '@/components/Work';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Work from "@/components/Work";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Posts from "./components/posts";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <About />
         <Skills />
         <Work />
+        <Posts />
         <Contact />
       </main>
       <Footer />
