@@ -31,7 +31,7 @@ export default function About() {
                 {/* Profile Image Container with Aspect Ratio */}
                 <div className="relative aspect-[5/5] w-full overflow-hidden rounded-2xl">
                   <img
-                    src="/imgpic.jpg"
+                    src="/imgpic2.png"
                     alt="Ashif Eqbal"
                     className="h-full w-full object-cover"
                   />

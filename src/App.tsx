@@ -5,7 +5,7 @@ import Skills from "@/components/Skills";
 import Work from "@/components/Work";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Posts from "@/components/Posts";
+import Certs from "@/components/Certs";
 
 export default function App() {
   return (
@@ -16,7 +16,7 @@ export default function App() {
         <About />
         <Skills />
         <Work />
-        <Posts />
+        <Certs />
         <Contact />
       </main>
       <Footer />

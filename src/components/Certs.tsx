@@ -13,7 +13,7 @@ export default function Skills() {
   const { ref, visible } = useReveal();
 
   return (
-    <section id="skills" className="bg-white/50 py-20 lg:py-28">
+    <section id="certs" className="bg-white/50 py-20 lg:py-28">
       <div
         ref={ref}
         className={`mx-auto max-w-6xl px-6 ${visible ? "is-visible" : "reveal"}`}
